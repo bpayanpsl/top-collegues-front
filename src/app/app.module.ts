@@ -5,10 +5,12 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AvisComponent } from './avis/avis.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AvisComponent
   ],
   imports: [
     BrowserModule,
