@@ -6,11 +6,19 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AvisComponent } from './avis/avis.component';
+import { CollegueComponent } from './collegue/collegue.component';
+import { ListeColleguesComponentComponent } from './liste-collegues-component/liste-collegues-component.component';
+import { AccueilComponentComponent } from './accueil-component/accueil-component.component';
+import { ScorePipe } from './pipes/score.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AvisComponent
+    AvisComponent,
+    CollegueComponent,
+    ListeColleguesComponentComponent,
+    AccueilComponentComponent,
+    ScorePipe
   ],
   imports: [
     BrowserModule,
@@ -21,3 +29,8 @@ import { AvisComponent } from './avis/avis.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+
