@@ -12,9 +12,11 @@
 </head>
 
 <body>
-  <button id="refresh" class="btn btn-primary" (click)="refresh()">Rafraishir la liste</button>
+  <button value="Refresh" onClick="window.location.reload()">Rafraishir la liste</button>
+  <div class ="container">
   <div class="row">
-    <div *ngFor="let obj of collegue" class="col-4 text-center">
+    <div *ngFor="let obj of collegue" class="col-4 text-center space-around">
       <app-collegue [collegue]="obj"></app-collegue>
     </div>
   </div>
+</div>
