@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Collegue } from '../models'
+import { Collegue } from '../models';
 
 @Component({
   selector: 'liste-collegues-component',

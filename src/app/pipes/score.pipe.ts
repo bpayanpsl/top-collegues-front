@@ -10,10 +10,10 @@ export class ScorePipe implements PipeTransform {
       return value;
     }
     if (Math.sign(value) === 1) {
-      return '+' + value;
+      return '+ ' + value;
     }
     if (Math.sign(value) === -1) {
-      return value;
+      return '- ' + Math.abs(value);
     }
   }
 
