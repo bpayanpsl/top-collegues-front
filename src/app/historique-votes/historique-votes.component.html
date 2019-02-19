@@ -1,0 +1,10 @@
+<div *ngFor="let v of listeVote; index as i" class="col-12">
+  <div class="bloc">
+    <div *ngIf='v.avis==0'><img class="photo" src={{v.collegue.photoURL}} width="200" height="200">{{v.collegue.pseudo}}
+      est aimé. Son score est de {{v.collegue.score | score}} points.
+    <button (click)="deleteElement(i)">Supprimer</button></div>
+    <div *ngIf='v.avis==1'><img class="photo" src={{v.collegue.photoURL}} width="200" height="200">{{v.collegue.pseudo}}
+      est détesté. Son score est de {{v.collegue.score | score}} points.
+      <button (click)="deleteElement(i)">Supprimer</button>
+  </div>
+</div>
