@@ -9,10 +9,13 @@ import { Collegue, Avis } from '../models'
 export class CollegueComponent implements OnInit {
 
   @Input() collegue: Collegue;
+  likeActif = true;
+  unLikeActif = true;
 
   constructor() { }
 
   ngOnInit() {
+    this.gererActivationBoutons();
   }
 
   onVoted(avis: Avis) {
@@ -21,7 +24,14 @@ export class CollegueComponent implements OnInit {
     } else if (avis == Avis.DéTESTER) {
       this.collegue.score--;
     }
+    this.gererActivationBoutons();
   }
-  
+
+  gererActivationBoutons() {
+    this.likeActif = this.collegue.score < 10;
+    this.unLikeActif = this.collegue.score > -10;
+  }
 }
+  
+
 
