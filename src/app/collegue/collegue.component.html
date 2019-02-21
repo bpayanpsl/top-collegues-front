@@ -1,7 +1,5 @@
 <div class="bloc">
-  <p>
-    <img class="photo" src={{collegue.photoURL}} width="200" height="200">
-  </p>
+  <img class="photo" src={{collegue.photoURL}} width="200" height="200">
   <div>{{collegue.pseudo | uppercase}}</div>
   <div>{{collegue.score | score}}</div>
   <app-avis (avis)="onVoted($event)" [btnLikeActif]="likeActif" [btnUnLikeActif]="unLikeActif"></app-avis>

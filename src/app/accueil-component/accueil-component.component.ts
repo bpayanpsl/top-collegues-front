@@ -12,10 +12,12 @@ export class AccueilComponentComponent implements OnInit {
   page = 1;
   pageSize = 3;
 
-   collegue: Collegue[];
+  collegue: Collegue[] = [];
     
   constructor(public _data:DataService) {
-    this.collegue = _data.lister();
+     _data.lister().subscribe(
+       tableauCols => this.collegue = tableauCols
+     );
    }
 
   ngOnInit() {

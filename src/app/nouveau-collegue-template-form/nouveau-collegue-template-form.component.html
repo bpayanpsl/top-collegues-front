@@ -1,0 +1,19 @@
+
+<form (ngSubmit)="submit()" #monForm="ngForm">
+  <table>
+    <tr>
+      <td><label>Matricule</label></td>
+      <td><input [(ngModel)]="postCollegue.matricule" name="val1" required></td>
+    </tr>
+    <tr>
+      <td><label>Pseudo</label></td>
+      <td><input [(ngModel)]="postCollegue.pseudo" name="val2" required minlength="2"></td>
+    </tr>
+    <tr>
+      <td><label>URL image</label></td>
+      <td><input [(ngModel)]="postCollegue.urlImage" name="val3"></td>
+    </tr>
+    {{message}}
+    <button type="submit" [disabled]="monForm.invalid">Ajouter</button>
+  </table>
+</form>
