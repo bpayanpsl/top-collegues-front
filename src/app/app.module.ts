@@ -5,7 +5,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AvisComponent } from './avis/avis.component';
 import { CollegueComponent } from './collegue/collegue.component';
-import { ListeColleguesComponentComponent } from './liste-collegues-component/liste-collegues-component.component';
 import { AccueilComponentComponent } from './accueil-component/accueil-component.component';
 import { ScorePipe } from './pipes/score.pipe';
 import { HistoriqueVotesComponent } from './historique-votes/historique-votes.component';
@@ -22,7 +21,6 @@ import { MenuComponentComponent } from './menu-component/menu-component.componen
     AppComponent,
     AvisComponent,
     CollegueComponent,
-    ListeColleguesComponentComponent,
     AccueilComponentComponent,
     ScorePipe,
     HistoriqueVotesComponent,
