@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
    // ajout d'une URL backend en mode développement
-   backendUrl: 'http://heroku'
+   backendUrl: 'https://benny-top-collegues.herokuapp.com'
 };
