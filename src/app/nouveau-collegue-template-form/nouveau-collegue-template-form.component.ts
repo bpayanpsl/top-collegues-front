@@ -13,8 +13,6 @@ import { DataService } from '../services/data.service';
 })
 export class NouveauCollegueTemplateFormComponent implements OnInit {
 
-  idDisabled = true;
-
   postCollegue :  PostCollegue = {} ;
 
   message = '';
@@ -26,8 +24,8 @@ export class NouveauCollegueTemplateFormComponent implements OnInit {
 
   submit() {
     this._data.creerCollegue(this.postCollegue).subscribe(
-      value => { this.message = 'ok bien enregistré'},
-      error => { this.message = 'oops pas bien enregistré'}
+      value => { this.message = 'Enregistrement réussi.'},
+      error => { this.message = "Erreur lors de l'enregistrement."}
     );
   }
 
